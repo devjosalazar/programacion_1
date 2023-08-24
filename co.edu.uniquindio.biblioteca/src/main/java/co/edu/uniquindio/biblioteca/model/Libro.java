@@ -1,19 +1,19 @@
 package co.edu.uniquindio.biblioteca.model;
 
 public class Libro {
-    private String nombre;
+    private String titulo;
     private String genero;
     private String autor;
     private int anioPublicacion;
     private String editorial;
     private int numeroPagina;
 
-    public String getNombre() {
-        return nombre;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getGenero() {
