@@ -58,7 +58,11 @@ public class MainCleanCode {
         modificarLibroPorTitulo(libro1, libro2, libro3, libro4, libro5, tituloActual, titulonNuevo);
     }
 
-    public static void calcularVocalesYConsonantes(Libro libro1, Libro libro2, Libro libro3, Libro libro4, Libro libro5){
+    public static void calcularVocalesYConsonantes(Libro libro1,
+                                                   Libro libro2,
+                                                   Libro libro3,
+                                                   Libro libro4,
+                                                   Libro libro5){
         int contadorVocal = 0;
         int contadorConsonante = 0;
 
@@ -95,7 +99,13 @@ public class MainCleanCode {
         System.out.println("Cantidad de consonantes es: "+ contadorConsonante);
     }
 
-    private static void modificarLibroPorTitulo(Libro libro1, Libro libro2, Libro libro3, Libro libro4, Libro libro5, String tituloActual, String titulonNuevo) {
+    private static void modificarLibroPorTitulo(Libro libro1,
+                                                Libro libro2,
+                                                Libro libro3,
+                                                Libro libro4,
+                                                Libro libro5,
+                                                String tituloActual,
+                                                String titulonNuevo) {
         if(libro1.getTitulo().equalsIgnoreCase(tituloActual)) {
             libro1.setTitulo(titulonNuevo);
             System.out.println("Libro encontrado con el nuevo titulo: "+libro1.getTitulo());
@@ -139,3 +149,4 @@ public class MainCleanCode {
         System.out.println(concatenado);
     }
 }
+
