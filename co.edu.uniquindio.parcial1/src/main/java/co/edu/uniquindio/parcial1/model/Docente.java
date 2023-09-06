@@ -1,4 +1,4 @@
-package co.edu.uniquindio.universidad.model;
+package co.edu.uniquindio.parcial1.model;
 
 public class Docente {
     private String nombre;

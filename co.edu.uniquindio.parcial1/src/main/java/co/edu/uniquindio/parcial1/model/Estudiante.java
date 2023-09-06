@@ -1,4 +1,4 @@
-package co.edu.uniquindio.universidad.model;
+package co.edu.uniquindio.parcial1.model;
 
 public class Estudiante {
     private String nombre;
@@ -98,12 +98,4 @@ public class Estudiante {
 
         return informacion;
     }
-
-    public double calcularPromedio(){
-        double promedio = 0.0;
-        promedio = (getNota1() + getNota2() + getNota3())/3;
-
-        return promedio;
-    }
-
 }
