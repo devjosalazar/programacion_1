@@ -11,6 +11,7 @@ public class Curso {
     private Estudiante estudiante2;
     private Estudiante estudiante3;
     private Docente docente;
+    private Docente docenteAuxiliar;
 
 
     public Curso(String nombre, int semestre, String grupo, int creditos, String jornada) {

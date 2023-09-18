@@ -49,4 +49,8 @@ public class Docente {
 
         return promedioCurso;
     }
+
+    public String obtenerInformacion() {
+        return "";
+    }
 }

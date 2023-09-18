@@ -117,4 +117,17 @@ public class Curso {
 
         return promedioCurso;
     }
+
+    public void obtenerInformacionDocente() {
+        String informacionDocente = getDocente().obtenerInformacion();
+    }
+
+    public void obtenerPromedioEdadEstudiantes() {
+        int ededEstudiante1 = getEstudiante1().getEdad();
+        int ededEstudiante2 = getEstudiante2().getEdad();
+        int ededEstudiante3 = getEstudiante3().getEdad();
+
+
+
+    }
 }

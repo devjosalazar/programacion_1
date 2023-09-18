@@ -5,6 +5,8 @@ import co.edu.uniquindio.universidad.model.Docente;
 import co.edu.uniquindio.universidad.model.Estudiante;
 
 public class Main {
+
+
     public static void main(String[] args) {
         Curso curso = inicializaDatosPrueba();
 
@@ -14,6 +16,9 @@ public class Main {
         /*Solictar promedio del curso*/
         double promedioCurso = curso.obtenerPromedioCurso();
 
+        curso.obtenerInformacionDocente();
+
+        curso.obtenerPromedioEdadEstudiantes();
 
     }
 
