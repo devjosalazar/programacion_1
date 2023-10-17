@@ -29,8 +29,16 @@ class CuentaTest {
     @Test
     void testSaldoCuenta(){
         Cuenta cuenta = new Cuenta("Pedro", 200000.0);
-        assertEquals(200000.0, cuenta.getSaldo());
+        assertEquals(20000.0, cuenta.getSaldo());
 //        assertFalse(cuenta.getSaldo() <= 0);
 //        assertTrue(cuenta.getSaldo() >= 0);
+    }
+
+    @Test
+    void testReferenciaCuenta(){
+        Cuenta cuenta = new Cuenta("Oscar", 20000.0);
+        Cuenta cuenta2 = new Cuenta("Oscar", 20000.0);
+        assertNotEquals(cuenta2, cuenta);
+
     }
 }
