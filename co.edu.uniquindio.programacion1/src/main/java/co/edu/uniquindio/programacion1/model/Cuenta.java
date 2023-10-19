@@ -29,4 +29,24 @@ public class Cuenta {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+    @Override
+    public String toString() {
+        return this.nombrePersona;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null){
+            return  false;
+        }
+
+        if(!(obj instanceof Cuenta)){
+            return  false;
+        }
+
+        Cuenta cuenta = (Cuenta) obj;
+        return this.nombrePersona.equalsIgnoreCase(cuenta.nombrePersona)
+                && this.saldo == cuenta.saldo;
+    }
 }
