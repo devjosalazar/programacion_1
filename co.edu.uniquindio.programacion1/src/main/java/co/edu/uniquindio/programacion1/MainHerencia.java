@@ -1,8 +1,6 @@
 package co.edu.uniquindio.programacion1;
 
-import co.edu.uniquindio.programacion1.model.Avion;
-import co.edu.uniquindio.programacion1.model.Carro;
-import co.edu.uniquindio.programacion1.model.Vehiculo;
+import co.edu.uniquindio.programacion1.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,18 +11,26 @@ public class MainHerencia {
         ArrayList<Vehiculo> listaV = new ArrayList<>();
 
         //Carro vehiculo = new Vehiculo();
-        Vehiculo vehiculo = new Carro();
-        vehiculo.encender();
-        Avion avion = new Avion();
-        avion.encender();
+//        Vehiculo vehiculo = new Carro();
+//        vehiculo.encender();
+//        Avion avion = new Avion();
+//        avion.encender();
         Carro carro = new Carro();
         carro.encender();
-        carro.encender("Empujando el carro");
-        carro.encender(2);
+//        carro.encender("Empujando el carro");
+//        carro.encender(2);
 
-        listaV.add(vehiculo);
+
+        CarroParticular carroParticular = new CarroParticular();
+        carroParticular.encenderElectricamente();
+        carroParticular.encenderGas();
+
+        MiniCarro miniCarro = new MiniCarro();
+
+
+//        listaV.add(vehiculo);
         listaV.add(carro);
-        listaV.add(avion);
+//        listaV.add(avion);
         int contador = 0;
 
         for (Vehiculo veh: listaV) {
